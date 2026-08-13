@@ -1,6 +1,7 @@
 # DMI Portfolio Website (Static HTML/CSS)
 
 This repository contains a clean, professional-looking **static portfolio website** used in **DevOps Micro Internship (DMI)** Week 1 to practice:
+
 - Linux basics
 - Nginx hosting
 - Deployment proof / ownership
@@ -11,13 +12,16 @@ This repository contains a clean, professional-looking **static portfolio websit
 ---
 
 ## Who is this for?
+
 - DMI students (beginner → intermediate)
 - Anyone learning how to host a static site with Nginx on Linux
 
 ---
 
 ## What you will build
+
 A portfolio-style website hosted on:
+
 - **Ubuntu VM**
 - **Nginx**
 - Accessible via: `http://<public-ip>`
@@ -25,18 +29,20 @@ A portfolio-style website hosted on:
 ---
 
 ## Mandatory Ownership Proof (DMI Rule)
-Before you deploy, you MUST edit the footer and add your details:
+
+Before you deploy, you MUST edit the footer and add your details.
 
 Original:
 
 ```html
 <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-```
+## Dynamic Footer Deployment Date
 
-Add this line (example):
+The website footer displays the deployment date automatically using JavaScript.
+
+The date is shown in `DD Mon YYYY` format.
+
+Example:
 
 ```html
-<p><strong>Deployed by:</strong> DMI Cohort 2 | Rahul Sharma | Group 4 | Week 1 | 16-01-2026</p>
-```
-
-✅ This proof must be visible in your browser screenshot submission.
+<p>DMI Website v1.0 — Deployed on <span id="deployDate"></span> — By Anish Kumar</p>

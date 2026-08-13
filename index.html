@@ -13,6 +13,18 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 
+<script>
+  const deployDate = new Date();
+
+  const formattedDate = deployDate.toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric"
+  });
+
+  document.getElementById("deployDate").textContent = formattedDate;
+</script>
+
 <body>
 
   <!-- NAVBAR -->
@@ -526,7 +538,7 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-        <p>DMI Website v1.0 - Deployed on 13 Aug 2026 - By Anish Kumar</p>
+        <p>DMI Website v1.0 — Deployed on <span id="deployDate"></span> — By Anish Kumar</p>
       </div>
 
     </div>
