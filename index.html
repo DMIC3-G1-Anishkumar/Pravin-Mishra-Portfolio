@@ -13,18 +13,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 
-<script>
-  const deployDate = new Date();
-
-  const formattedDate = deployDate.toLocaleDateString("en-GB", {
-    day: "2-digit",
-    month: "short",
-    year: "numeric"
-  });
-
-  document.getElementById("deployDate").textContent = formattedDate;
-</script>
-
 <body>
 
   <!-- NAVBAR -->
@@ -77,13 +65,15 @@
 
     <img src="images/image.png" alt="Hero Banner" class="hero-bg" loading="lazy">
 
-    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>
-        “Empowering thousands of students<br>
-        towards success.”
-      </h1>
-    </div>
+  <h1>
+    <a href="https://discord.pravinmishra.com/"
+       target="_blank"
+       rel="noopener noreferrer">
+      Join DMI Cohort 3 on Discord and start your DevOps journey
+    </a>
+  </h1>
+</div>
 
   </section>
   <section id="about" class="about-section">
@@ -468,7 +458,7 @@
 
 
   <!-- FOOTER -->
-  <footer class="footer">
+     <footer class="footer">
     <div class="footer-container">
 
       <div class="footer-grid">
@@ -543,7 +533,18 @@
 
     </div>
   </footer>
+  
+<script>
+  const deployDate = new Date();
 
+  const formattedDate = deployDate.toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric"
+  });
+
+  document.getElementById("deployDate").textContent = formattedDate;
+</script>
 
 
 </body>
